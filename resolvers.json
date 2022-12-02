@@ -671,7 +671,6 @@
       "endpoint": {
         "protocol": "https:",
         "host": "doh.tiar.app",
-        "method": "POST",
         "cors": true
       },
       "description": "Non-Logging DNS-over-HTTPS server located in Singapore.\nFilters out ads, trackers and malware, supports DNSSEC, provided by id-gmail.",
@@ -811,6 +810,7 @@
         "protocol": "https:",
         "host": "doh.tiar.app",
         "path": "/odoh",
+        "method": "POST",
         "cors": true
       },
       "description": "ODoH target server. Based in Singapore, no logs.\nFilter ads, trackers and malware.",
