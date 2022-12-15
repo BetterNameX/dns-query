@@ -108,22 +108,6 @@
       "cors": true
     },
     {
-      "name": "ahadns-doh-ny",
-      "endpoint": {
-        "protocol": "https:",
-        "host": "doh.ny.ahadns.net",
-        "cors": true
-      },
-      "description": "A zero logging DNS with support for DNS-over-HTTPS (DoH) & DNS-over-TLS (DoT). Blocks ads, malware, trackers, viruses, ransomware, telemetry and more. No persistent logs. DNSSEC. Hosted in New York. By https://ahadns.com/\nServer statistics can be seen at: https://statistics.ahadns.com/?server=ny",
-      "country": "United States",
-      "location": {
-        "lat": 40.7308,
-        "long": -73.9975
-      },
-      "filter": true,
-      "cors": true
-    },
-    {
       "name": "ahadns-doh-pl",
       "endpoint": {
         "protocol": "https:",
