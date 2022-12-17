@@ -92,6 +92,22 @@
       "cors": true
     },
     {
+      "name": "ahadns-doh-nl",
+      "endpoint": {
+        "protocol": "https:",
+        "host": "doh.nl.ahadns.net",
+        "cors": true
+      },
+      "description": "A zero logging DNS with support for DNS-over-HTTPS (DoH) & DNS-over-TLS (DoT). Blocks ads, malware, trackers, viruses, ransomware, telemetry and more. No persistent logs. DNSSEC. Hosted in Amsterdam, Netherlands. By https://ahadns.com/\nServer statistics can be seen at: https://statistics.ahadns.com/?server=nl",
+      "country": "Netherlands",
+      "location": {
+        "lat": 52.3824,
+        "long": 4.8995
+      },
+      "filter": true,
+      "cors": true
+    },
+    {
       "name": "ahadns-doh-pl",
       "endpoint": {
         "protocol": "https:",
@@ -155,15 +171,6 @@
         "long": 24.997
       },
       "cors": true
-    },
-    {
-      "name": "att",
-      "endpoint": {
-        "protocol": "https:",
-        "host": "dohtrial.att.net"
-      },
-      "description": "AT&T test DoH server.",
-      "log": true
     },
     {
       "name": "bebasdns",
@@ -414,47 +421,6 @@
       "location": {
         "lat": 37.751,
         "long": -97.822
-      },
-      "filter": true
-    },
-    {
-      "name": "dnscrypt.uk-doh-ipv4",
-      "endpoint": {
-        "protocol": "https:",
-        "host": "doh.dnscrypt.uk"
-      },
-      "description": "DoH, no logs, uncensored, DNSSEC. Hosted in London UK on Digital Ocean\nhttps://www.dnscrypt.uk",
-      "country": "United Kingdom",
-      "location": {
-        "lat": 51.5177,
-        "long": -0.6215
-      }
-    },
-    {
-      "name": "dnsforfamily-doh",
-      "endpoint": {
-        "protocol": "https:",
-        "host": "dns-doh.dnsforfamily.com"
-      },
-      "description": "(DoH Protocol) (Now supports DNSSEC). Block adult websites, gambling websites, malwares and advertisements.\nIt also enforces safe search in: Google, YouTube, Bing, DuckDuckGo and Yandex.\nSocial websites like Facebook and Instagram are not blocked. No DNS queries are logged.\nAs of 26-May-2022 5.9 million websites are blocked and new websites are added to blacklist daily.\nCompletely free, no ads or any commercial motive. Operating for 4 years now.\nProvided by: https://dnsforfamily.com",
-      "country": "Germany",
-      "location": {
-        "lat": 51.2993,
-        "long": 9.491
-      },
-      "filter": true
-    },
-    {
-      "name": "dnsforfamily-doh-no-safe-search",
-      "endpoint": {
-        "protocol": "https:",
-        "host": "dns-doh-no-safe-search.dnsforfamily.com"
-      },
-      "description": "(DoH Protocol) (Now supports DNSSEC) Block adult websites, gambling websites, malwares and advertisements.\nUnlike other dnsforfamily servers, this one does not enforces safe search. So Google, YouTube, Bing, DuckDuckGo and Yandex are completely accessible without any restriction.\nSocial websites like Facebook and Instagram are not blocked. No DNS queries are logged.\nAs of 26-May-2022 5.9 million websites are blocked and new websites are added to blacklist daily.\nCompletely free, no ads or any commercial motive. Operating for 4 years now.\nWarning: This server is incompatible with anonymization.\nProvided by: https://dnsforfamily.com",
-      "country": "Germany",
-      "location": {
-        "lat": 51.2993,
-        "long": 9.491
       },
       "filter": true
     },
@@ -789,7 +755,6 @@
         "protocol": "https:",
         "host": "doh.tiar.app",
         "path": "/odoh",
-        "method": "POST",
         "cors": true
       },
       "description": "ODoH target server. Based in Singapore, no logs.\nFilter ads, trackers and malware.",
