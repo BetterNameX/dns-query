@@ -805,7 +805,6 @@
         "protocol": "https:",
         "host": "doh.tiar.app",
         "path": "/odoh",
-        "method": "POST",
         "cors": true
       },
       "description": "ODoH target server. Based in Singapore, no logs.\nFilter ads, trackers and malware.",
