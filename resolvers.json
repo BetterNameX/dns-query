@@ -419,31 +419,18 @@
       }
     },
     {
-      "name": "dns.ryan-palmer",
-      "endpoint": {
-        "protocol": "https:",
-        "host": "dns1.ryan-palmer.com"
-      },
-      "description": "Non-logging, non-filtering, DNSSEC DoH Server. Hosted in the UK.",
-      "country": "United Kingdom",
-      "location": {
-        "lat": 51.5164,
-        "long": -0.093
-      }
-    },
-    {
       "name": "dns.sb",
       "endpoint": {
         "protocol": "https:",
-        "host": "45.11.45.11",
-        "ipv4": "45.11.45.11",
+        "host": "185.222.222.222",
+        "ipv4": "185.222.222.222",
         "cors": true
       },
       "description": "DoH server runned by xTom.com. No logs, no filtering, supports DNSSEC.\nHomepage: https://dns.sb",
-      "country": "Netherlands",
+      "country": "Unknown",
       "location": {
-        "lat": 52.3824,
-        "long": 4.8995
+        "lat": 47,
+        "long": 8
       },
       "cors": true
     },
@@ -453,7 +440,7 @@
         "protocol": "https:",
         "host": "dns.therifleman.name"
       },
-      "description": "DNS-over-HTTPS DNS forwarder from Mumbai, India. Blocks web and Android trackers and ads.\nIP addresses are not logged, but queries are logged for 24 hours for debugging.\nReport issues, send suggestions @ joker349 at protonmail.com.\nAlso supports DoT (for android) @ dns.therifleman.name and plain DNS @ 172.104.206.174",
+      "description": "DNS-over-HTTPS DNS forwarder from Mumbai, India.\nBlocks web, Android trackers and ads.\nDoes not log client IP addresses, but logs queries for 24 hours for debugging\nand delegates DNS resolution to the default Linode DNS server.\nReport issues, and send suggestions to @ joker349 at protonmail.com.\nAlso supports DoT (for android) @ dns.therifleman.name and plain\nDNS @ 172.104.206.174 (Note: because of spam bots mostly from USA,\nplain DNS access is limited to India and Singapore for now. If you\nare not from these countries and would like to access plain DNS, send\na request at aforementioned email address.\nDoT and DoH are available world-wide.",
       "country": "United States",
       "location": {
         "lat": 37.751,
@@ -830,7 +817,6 @@
         "protocol": "https:",
         "host": "doh.tiar.app",
         "path": "/odoh",
-        "method": "POST",
         "cors": true
       },
       "description": "ODoH target server. Based in Singapore, no logs.\nFilter ads, trackers and malware.",
@@ -966,84 +952,6 @@
         "long": 151.2002
       },
       "cors": true
-    },
-    {
-      "name": "qihoo360-doh",
-      "endpoint": {
-        "protocol": "https:",
-        "host": "doh.360.cn"
-      },
-      "description": "DoH server runned by Qihoo 360, has logs, supports DNSSEC. GFW filtering rules are applied.\nHomepage: https://sdns.360.net/",
-      "filter": true,
-      "log": true
-    },
-    {
-      "name": "quad101",
-      "endpoint": {
-        "protocol": "https:",
-        "host": "dns.twnic.tw",
-        "cors": true
-      },
-      "description": "DNSSEC-aware public resolver by the Taiwan Network Information Center (TWNIC)\nhttps://101.101.101.101/index_en.html",
-      "cors": true
-    },
-    {
-      "name": "quad9-doh-ip4-port443-filter-ecs-pri",
-      "endpoint": {
-        "protocol": "https:",
-        "host": "dns11.quad9.net",
-        "ipv4": "9.9.9.11"
-      },
-      "description": "Quad9 (anycast) dnssec/no-log/filter/ecs 9.9.9.11 - 149.112.112.11",
-      "country": "United States",
-      "location": {
-        "lat": 37.751,
-        "long": -97.822
-      },
-      "filter": true
-    },
-    {
-      "name": "quad9-doh-ip4-port443-filter-pri",
-      "endpoint": {
-        "protocol": "https:",
-        "host": "dns9.quad9.net",
-        "ipv4": "149.112.112.9"
-      },
-      "description": "Quad9 (anycast) dnssec/no-log/filter 9.9.9.9 - 149.112.112.9 - 149.112.112.112",
-      "country": "United States",
-      "location": {
-        "lat": 37.751,
-        "long": -97.822
-      },
-      "filter": true
-    },
-    {
-      "name": "quad9-doh-ip4-port443-nofilter-ecs-pri",
-      "endpoint": {
-        "protocol": "https:",
-        "host": "dns12.quad9.net",
-        "ipv4": "149.112.112.12"
-      },
-      "description": "Quad9 (anycast) no-dnssec/no-log/no-filter/ecs 9.9.9.12 - 149.112.112.12",
-      "country": "United States",
-      "location": {
-        "lat": 37.751,
-        "long": -97.822
-      }
-    },
-    {
-      "name": "quad9-doh-ip4-port443-nofilter-pri",
-      "endpoint": {
-        "protocol": "https:",
-        "host": "dns10.quad9.net",
-        "ipv4": "149.112.112.10"
-      },
-      "description": "Quad9 (anycast) no-dnssec/no-log/no-filter 9.9.9.10 - 149.112.112.10",
-      "country": "United States",
-      "location": {
-        "lat": 37.751,
-        "long": -97.822
-      }
     },
     {
       "name": "safesurfer-doh",
