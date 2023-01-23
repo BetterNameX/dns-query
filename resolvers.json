@@ -702,36 +702,6 @@
       "cors": true
     },
     {
-      "name": "iij",
-      "endpoint": {
-        "protocol": "https:",
-        "host": "public.dns.iij.jp"
-      },
-      "description": "DoH server operated by Internet Initiative Japan in Tokyo. Blocks child pornography.\nhttps://www.iij.ad.jp/",
-      "country": "Japan",
-      "location": {
-        "lat": 35.69,
-        "long": 139.69
-      },
-      "filter": true,
-      "log": true
-    },
-    {
-      "name": "jp.tiar.app-doh",
-      "endpoint": {
-        "protocol": "https:",
-        "host": "jp.tiar.app",
-        "cors": true
-      },
-      "description": "Non-Logging, Non-Filtering DNS-over-HTTPS server in Japan.\nNo ECS, Support DNSSEC",
-      "country": "Japan",
-      "location": {
-        "lat": 35.6882,
-        "long": 139.7532
-      },
-      "cors": true
-    },
-    {
       "name": "jp.tiarap.org",
       "endpoint": {
         "protocol": "https:",
@@ -1006,13 +976,13 @@
       "endpoint": {
         "protocol": "https:",
         "host": "dns9.quad9.net",
-        "ipv4": "9.9.9.9"
+        "ipv4": "149.112.112.9"
       },
       "description": "Quad9 (anycast) dnssec/no-log/filter 9.9.9.9 - 149.112.112.9 - 149.112.112.112",
-      "country": "France",
+      "country": "United States",
       "location": {
-        "lat": 48.8582,
-        "long": 2.3387
+        "lat": 37.751,
+        "long": -97.822
       },
       "filter": true
     },
@@ -1021,7 +991,7 @@
       "endpoint": {
         "protocol": "https:",
         "host": "dns12.quad9.net",
-        "ipv4": "149.112.112.12"
+        "ipv4": "9.9.9.12"
       },
       "description": "Quad9 (anycast) no-dnssec/no-log/no-filter/ecs 9.9.9.12 - 149.112.112.12",
       "country": "United States",
@@ -1045,7 +1015,7 @@
       }
     },
     {
-      "name": "quad9-doh-ip6-port443-filter-pri",
+      "name": "quad9-doh-ip6-port5053-filter-pri",
       "endpoint": {
         "protocol": "https:",
         "host": "dns.quad9.net"
