@@ -407,15 +407,15 @@
       "name": "dns.sb",
       "endpoint": {
         "protocol": "https:",
-        "host": "45.11.45.11",
-        "ipv4": "45.11.45.11",
+        "host": "185.222.222.222",
+        "ipv4": "185.222.222.222",
         "cors": true
       },
       "description": "DoH server runned by xTom.com. No logs, no filtering, supports DNSSEC.\nHomepage: https://dns.sb",
-      "country": "Netherlands",
+      "country": "Unknown",
       "location": {
-        "lat": 52.3824,
-        "long": 4.8995
+        "lat": 47,
+        "long": 8
       },
       "cors": true
     },
@@ -587,35 +587,6 @@
         "lat": 37.751,
         "long": -97.822
       },
-      "cors": true
-    },
-    {
-      "name": "doh.ffmuc.net",
-      "endpoint": {
-        "protocol": "https:",
-        "host": "doh.ffmuc.net"
-      },
-      "description": "An open (non-logging, non-filtering, non-censoring) DoH resolver operated by Freifunk Munich with nodes in DE.\nhttps://ffmuc.net/",
-      "country": "Germany",
-      "location": {
-        "lat": 51.2993,
-        "long": 9.491
-      }
-    },
-    {
-      "name": "google",
-      "endpoint": {
-        "protocol": "https:",
-        "host": "dns.google",
-        "cors": true
-      },
-      "description": "Google DNS (anycast)",
-      "country": "United States",
-      "location": {
-        "lat": 37.751,
-        "long": -97.822
-      },
-      "log": true,
       "cors": true
     },
     {
