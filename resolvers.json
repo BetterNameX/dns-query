@@ -554,6 +554,30 @@
       "cors": true
     },
     {
+      "name": "doh-cleanbrowsing-family",
+      "endpoint": {
+        "protocol": "https:",
+        "host": "doh.cleanbrowsing.org",
+        "path": "/doh/family-filter/",
+        "cors": true
+      },
+      "description": "Blocks access to all adult, pornographic and explicit sites. It also\nblocks proxy and VPN domains that are used to bypass the filters.\nMixed content sites (like Reddit) are also blocked. Google, Bing and\nYoutube are set to the Safe Mode.\nBy https://cleanbrowsing.org/",
+      "filter": true,
+      "cors": true
+    },
+    {
+      "name": "doh-cleanbrowsing-security",
+      "endpoint": {
+        "protocol": "https:",
+        "host": "doh.cleanbrowsing.org",
+        "path": "/doh/security-filter/",
+        "cors": true
+      },
+      "description": "Block access to phishing, malware and malicious domains. It does not block adult content.\nBy https://cleanbrowsing.org/",
+      "filter": true,
+      "cors": true
+    },
+    {
       "name": "doh-crypto-sx",
       "endpoint": {
         "protocol": "https:",
@@ -698,6 +722,7 @@
       "endpoint": {
         "protocol": "https:",
         "host": "jp.tiar.app",
+        "method": "POST",
         "cors": true
       },
       "description": "Non-Logging, Non-Filtering DNS-over-HTTPS server in Japan.\nNo ECS, Support DNSSEC",
@@ -890,7 +915,7 @@
       "endpoint": {
         "protocol": "https:",
         "host": "dns12.quad9.net",
-        "ipv4": "9.9.9.12"
+        "ipv4": "149.112.112.12"
       },
       "description": "Quad9 (anycast) no-dnssec/no-log/no-filter/ecs 9.9.9.12 - 149.112.112.12",
       "country": "United States",
@@ -912,20 +937,6 @@
         "lat": 37.751,
         "long": -97.822
       }
-    },
-    {
-      "name": "quad9-doh-ip6-port5053-filter-pri",
-      "endpoint": {
-        "protocol": "https:",
-        "host": "dns9.quad9.net"
-      },
-      "description": "Quad9 (anycast) dnssec/no-log/filter 2620:fe::fe - 2620:fe::9 - 2620:fe::fe:9",
-      "country": "United States",
-      "location": {
-        "lat": 37.751,
-        "long": -97.822
-      },
-      "filter": true
     },
     {
       "name": "safesurfer-doh",
