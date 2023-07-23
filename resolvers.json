@@ -183,15 +183,6 @@
       "cors": true
     },
     {
-      "name": "att",
-      "endpoint": {
-        "protocol": "https:",
-        "host": "dohtrial.att.net"
-      },
-      "description": "AT&T test DoH server.",
-      "log": true
-    },
-    {
       "name": "circl-doh",
       "endpoint": {
         "protocol": "https:",
@@ -533,15 +524,6 @@
       "cors": true
     },
     {
-      "name": "dnswarden-adult-doh",
-      "endpoint": {
-        "protocol": "https:",
-        "host": "dns.dnswarden.com"
-      },
-      "description": "Blocks adult content and enforces safe search on major search engines.\nFor further customization look here: https://dnswarden.com/customfilter.html",
-      "filter": true
-    },
-    {
       "name": "doh-cleanbrowsing-adult",
       "endpoint": {
         "protocol": "https:",
@@ -571,6 +553,7 @@
         "protocol": "https:",
         "host": "doh.cleanbrowsing.org",
         "path": "/doh/security-filter/",
+        "method": "POST",
         "cors": true
       },
       "description": "Block access to phishing, malware and malicious domains. It does not block adult content.\nBy https://cleanbrowsing.org/",
@@ -722,7 +705,6 @@
       "endpoint": {
         "protocol": "https:",
         "host": "jp.tiar.app",
-        "method": "POST",
         "cors": true
       },
       "description": "Non-Logging, Non-Filtering DNS-over-HTTPS server in Japan.\nNo ECS, Support DNSSEC",
@@ -899,14 +881,14 @@
       "name": "quad9-doh-ip4-port443-filter-pri",
       "endpoint": {
         "protocol": "https:",
-        "host": "dns.quad9.net",
-        "ipv4": "149.112.112.112"
+        "host": "dns9.quad9.net",
+        "ipv4": "9.9.9.9"
       },
       "description": "Quad9 (anycast) dnssec/no-log/filter 9.9.9.9 - 149.112.112.9 - 149.112.112.112",
-      "country": "United States",
+      "country": "France",
       "location": {
-        "lat": 37.751,
-        "long": -97.822
+        "lat": 48.8582,
+        "long": 2.3387
       },
       "filter": true
     },
@@ -937,6 +919,21 @@
         "lat": 37.751,
         "long": -97.822
       }
+    },
+    {
+      "name": "quad9-doh-ip4-port5053-filter-pri",
+      "endpoint": {
+        "protocol": "https:",
+        "host": "dns.quad9.net",
+        "ipv4": "149.112.112.112"
+      },
+      "description": "Quad9 (anycast) dnssec/no-log/filter 9.9.9.9 - 149.112.112.9 - 149.112.112.112",
+      "country": "United States",
+      "location": {
+        "lat": 37.751,
+        "long": -97.822
+      },
+      "filter": true
     },
     {
       "name": "safesurfer-doh",
