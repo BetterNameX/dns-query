@@ -658,6 +658,14 @@
       "cors": true
     },
     {
+      "name": "doh-ibksturm",
+      "endpoint": {
+        "protocol": "https:",
+        "host": "ibksturm.synology.me"
+      },
+      "description": "DoH & DoT Server, No Logging, No Filters, DNSSEC\nRunning privately by ibksturm in Thurgau, Switzerland"
+    },
+    {
       "name": "doh.ffmuc.net",
       "endpoint": {
         "protocol": "https:",
@@ -818,7 +826,7 @@
         "protocol": "https:",
         "host": "pdns.itxe.net"
       },
-      "description": "DoH server in mainland China operated by [Nyarime](https://about.x.gy), powered by AdGuard Home. Intro page: https://x.gy/article/moedns\nKeeps logs for 90 days according to law, filters ads and malicious websites, supports DNSSEC, no GFW poisoning",
+      "description": "DoH server in mainland China operated by [Nyarime](https://naixi.net/), powered by AdGuard Home. Intro page: https://blog.naixi.net/article/moedns\nKeeps logs for 90 days according to law, filters ads and malicious websites, supports DNSSEC, no GFW poisoning",
       "filter": true,
       "log": true
     },
@@ -912,13 +920,12 @@
       "cors": true
     },
     {
-      "name": "quad9-doh-ip4-port5053-filter-pri",
+      "name": "quad9-doh-ip6-port5053-filter-pri",
       "endpoint": {
         "protocol": "https:",
-        "host": "dns.quad9.net",
-        "ipv4": "149.112.112.112"
+        "host": "dns9.quad9.net"
       },
-      "description": "Quad9 (anycast) dnssec/no-log/filter 9.9.9.9 - 149.112.112.9 - 149.112.112.112",
+      "description": "Quad9 (anycast) dnssec/no-log/filter 2620:fe::fe - 2620:fe::9 - 2620:fe::fe:9",
       "country": "United States",
       "location": {
         "lat": 37.751,
