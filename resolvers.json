@@ -853,6 +853,113 @@
       "description": "NextDNS is a cloud-based private DNS service that gives you full control\nover what is allowed and what is blocked on the Internet.\nhttps://www.nextdns.io/\nTo select the server location, the \"-ultralow\" variant relies on bootstrap servers\ninstead of anycast."
     },
     {
+      "name": "njalla-doh",
+      "endpoint": {
+        "protocol": "https:",
+        "host": "dns.njal.la"
+      },
+      "description": "Non-logging DoH server in Sweden operated by Njalla.\nhttps://dns.njal.la/",
+      "country": "Sweden",
+      "location": {
+        "lat": 59.3247,
+        "long": 18.056
+      }
+    },
+    {
+      "name": "plan9dns-fl-doh",
+      "endpoint": {
+        "protocol": "https:",
+        "host": "pluton.plan9-dns.com"
+      },
+      "description": "Miami Florida, US No-logs, no-filters, DNSSEC -info https://jlongua.github.io/plan9-dns",
+      "country": "United States",
+      "location": {
+        "lat": 25.8119,
+        "long": -80.2318
+      }
+    },
+    {
+      "name": "plan9dns-mx-doh",
+      "endpoint": {
+        "protocol": "https:",
+        "host": "helios.plan9-dns.com"
+      },
+      "description": "Mexico City, Mexico No-logs, no-filters, DNSSEC -info https://jlongua.github.io/plan9-dns",
+      "country": "United States",
+      "location": {
+        "lat": 39.9668,
+        "long": -75.1512
+      }
+    },
+    {
+      "name": "plan9dns-nj-doh",
+      "endpoint": {
+        "protocol": "https:",
+        "host": "kronos.plan9-dns.com"
+      },
+      "description": "Piscataway New Jersey, US No-logs, no-filters, DNSSEC -info https://jlongua.github.io/plan9-dns",
+      "country": "United States",
+      "location": {
+        "lat": 40.5511,
+        "long": -74.4606
+      }
+    },
+    {
+      "name": "publicarray-au2-doh",
+      "endpoint": {
+        "protocol": "https:",
+        "host": "doh-2.seby.io",
+        "cors": true
+      },
+      "description": "DNSSEC • OpenNIC • Non-logging • Uncensored - hosted on ovh.com.au\nMaintained by publicarray - https://dns.seby.io",
+      "country": "Australia",
+      "location": {
+        "lat": -33.8591,
+        "long": 151.2002
+      },
+      "cors": true
+    },
+    {
+      "name": "quad101",
+      "endpoint": {
+        "protocol": "https:",
+        "host": "dns.twnic.tw",
+        "cors": true
+      },
+      "description": "DNSSEC-aware public resolver by the Taiwan Network Information Center (TWNIC)\nhttps://101.101.101.101/index_en.html",
+      "cors": true
+    },
+    {
+      "name": "quad9-doh-ip4-port443-filter-ecs-pri",
+      "endpoint": {
+        "protocol": "https:",
+        "host": "dns11.quad9.net",
+        "ipv4": "149.112.112.11"
+      },
+      "description": "Quad9 (anycast) dnssec/no-log/filter/ecs 9.9.9.11 - 149.112.112.11",
+      "country": "United States",
+      "location": {
+        "lat": 37.751,
+        "long": -97.822
+      },
+      "filter": true
+    },
+    {
+      "name": "quad9-doh-ip4-port443-filter-pri",
+      "endpoint": {
+        "protocol": "https:",
+        "host": "dns9.quad9.net",
+        "ipv4": "9.9.9.9"
+      },
+      "description": "Quad9 (anycast) dnssec/no-log/filter 9.9.9.9 - 149.112.112.9 - 149.112.112.112",
+      "country": "France",
+      "location": {
+        "lat": 48.8582,
+        "long": 2.3387
+      },
+      "filter": true
+    },
+    {
       "name": "quad9-doh-ip4-port443-nofilter-ecs-pri",
       "endpoint": {
         "protocol": "https:",
@@ -881,13 +988,12 @@
       }
     },
     {
-      "name": "quad9-doh-ip4-port5053-filter-pri",
+      "name": "quad9-doh-ip6-port443-filter-pri",
       "endpoint": {
         "protocol": "https:",
-        "host": "dns.quad9.net",
-        "ipv4": "149.112.112.112"
+        "host": "dns.quad9.net"
       },
-      "description": "Quad9 (anycast) dnssec/no-log/filter 9.9.9.9 - 149.112.112.9 - 149.112.112.112",
+      "description": "Quad9 (anycast) dnssec/no-log/filter 2620:fe::fe - 2620:fe::9 - 2620:fe::fe:9",
       "country": "United States",
       "location": {
         "lat": 37.751,
