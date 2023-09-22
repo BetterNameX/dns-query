@@ -206,6 +206,20 @@
       "filter": true
     },
     {
+      "name": "bebasdns-security",
+      "endpoint": {
+        "protocol": "https:",
+        "host": "antivirus.bebasid.com"
+      },
+      "description": "BebasDNS Security Variant by BebasID. DNSSEC supported. Only blocks malicious links.",
+      "country": "Australia",
+      "location": {
+        "lat": -33.494,
+        "long": 143.2104
+      },
+      "filter": true
+    },
+    {
       "name": "brahma-world",
       "endpoint": {
         "protocol": "https:",
@@ -955,7 +969,7 @@
       "endpoint": {
         "protocol": "https:",
         "host": "dns12.quad9.net",
-        "ipv4": "149.112.112.12"
+        "ipv4": "9.9.9.12"
       },
       "description": "Quad9 (anycast) no-dnssec/no-log/no-filter/ecs 9.9.9.12 - 149.112.112.12",
       "country": "United States",
