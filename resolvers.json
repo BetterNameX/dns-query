@@ -134,13 +134,53 @@
       "cors": true
     },
     {
-      "name": "att",
+      "name": "alidns-doh",
       "endpoint": {
         "protocol": "https:",
-        "host": "dohtrial.att.net"
+        "host": "dns.alidns.com",
+        "ipv4": "223.5.5.5",
+        "cors": true
       },
-      "description": "AT&T test DoH server.",
-      "log": true
+      "description": "A public DNS resolver that supports DoH/DoT in mainland China, provided by Alibaba-Cloud.\nWarning: GFW filtering rules are applied by that resolver.\nHomepage: https://alidns.com/",
+      "country": "China",
+      "location": {
+        "lat": 34.7725,
+        "long": 113.7266
+      },
+      "filter": true,
+      "log": true,
+      "cors": true
+    },
+    {
+      "name": "ams-ads-doh-nl",
+      "endpoint": {
+        "protocol": "https:",
+        "host": "dnsnl-noads.alekberg.net",
+        "cors": true
+      },
+      "description": "Resolver in Amsterdam. HTTP3, DoH protocol. Non-logging. Blocks ads, malware and trackers. DNSSEC enabled.",
+      "country": "Romania",
+      "location": {
+        "lat": 45.9968,
+        "long": 24.997
+      },
+      "filter": true,
+      "cors": true
+    },
+    {
+      "name": "ams-doh-nl",
+      "endpoint": {
+        "protocol": "https:",
+        "host": "dnsnl.alekberg.net",
+        "cors": true
+      },
+      "description": "Resolver in Amsterdam. HTTP3, DoH protocol. Non-logging, non-filtering, DNSSEC.",
+      "country": "Romania",
+      "location": {
+        "lat": 45.9968,
+        "long": 24.997
+      },
+      "cors": true
     },
     {
       "name": "bebasdns-unfiltered-doh",
@@ -395,15 +435,15 @@
       "name": "dns.sb",
       "endpoint": {
         "protocol": "https:",
-        "host": "185.222.222.222",
-        "ipv4": "185.222.222.222",
+        "host": "45.11.45.11",
+        "ipv4": "45.11.45.11",
         "cors": true
       },
       "description": "DoH server runned by xTom.com. No logs, no filtering, supports DNSSEC.\nHomepage: https://dns.sb",
-      "country": "Unknown",
+      "country": "Netherlands",
       "location": {
-        "lat": 47,
-        "long": 8
+        "lat": 52.3824,
+        "long": 4.8995
       },
       "cors": true
     },
@@ -593,6 +633,19 @@
         "long": -97.822
       },
       "cors": true
+    },
+    {
+      "name": "doh-ibksturm",
+      "endpoint": {
+        "protocol": "https:",
+        "host": "ibksturm.synology.me"
+      },
+      "description": "DoH & DoT Server, No Logging, No Filters, DNSSEC\nRunning privately by ibksturm in Thurgau, Switzerland",
+      "country": "Switzerland",
+      "location": {
+        "lat": 47.4091,
+        "long": 9.0362
+      }
     },
     {
       "name": "doh.ffmuc.net",
@@ -956,7 +1009,7 @@
       "endpoint": {
         "protocol": "https:",
         "host": "dns11.quad9.net",
-        "ipv4": "149.112.112.11"
+        "ipv4": "9.9.9.11"
       },
       "description": "Quad9 (anycast) dnssec/no-log/filter/ecs 9.9.9.11 - 149.112.112.11",
       "country": "United States",
@@ -1000,7 +1053,7 @@
       "endpoint": {
         "protocol": "https:",
         "host": "dns10.quad9.net",
-        "ipv4": "9.9.9.10"
+        "ipv4": "149.112.112.10"
       },
       "description": "Quad9 (anycast) no-dnssec/no-log/no-filter 9.9.9.10 - 149.112.112.10",
       "country": "United States",
@@ -1028,11 +1081,9 @@
       "name": "rethinkdns-doh",
       "endpoint": {
         "protocol": "https:",
-        "host": "sky.rethinkdns.com",
-        "cors": true
+        "host": "max.rethinkdns.com"
       },
-      "description": "DNSSEC, No-log, No-filter\nRethinkDNS, a stub (sky.rethinkdns.com hosted on Cloudflare) and recursive (max.rethinkdns.com hosted on fly.io) resolver\nThe stub server strips identification parameters from the request and acts as a proxy to another recursive resolver.",
-      "cors": true
+      "description": "DNSSEC, No-log, No-filter\nRethinkDNS, a stub (sky.rethinkdns.com hosted on Cloudflare) and recursive (max.rethinkdns.com hosted on fly.io) resolver\nThe stub server strips identification parameters from the request and acts as a proxy to another recursive resolver."
     },
     {
       "name": "safesurfer-doh",
